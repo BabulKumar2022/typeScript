@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
+import Users from './components/Users';
 
 function App() {
 
@@ -17,9 +19,16 @@ const person: Person ={
   age: 334
 }
 
+const handleAddUser = (name: string, age: number, address: string): string =>{
+  const total: number = 79;
+  console.log(name, age, address)
+  return address
+}
+
   return (
     <div className="App">
-
+      <Counter></Counter>
+      <Users></Users>
     </div>
   );
 }
